@@ -1,0 +1,18 @@
+version: "2"
+services:
+  web:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+    volumes:
+      - brogue-data:/web-brogue/game-data
+  mongo:
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+  brogue-data:

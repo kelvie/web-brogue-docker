@@ -1,0 +1,3 @@
+[submodule "web-brogue"]
+	path = web-brogue
+	url = https://github.com/flend/web-brogue.git
